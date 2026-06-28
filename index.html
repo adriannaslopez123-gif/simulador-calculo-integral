@@ -16,42 +16,32 @@
 
 <div class="contenedor">
 
-<!-- Pantalla bienvenida -->
+<!-- BIENVENIDA -->
 <div id="bienvenida" class="pantalla">
     <h2>Bienvenido</h2>
-    <p>Este simulador fue diseñado para ayudarte a preparar tu examen de la Unidad 3.</p>
-
+    <p>Simulador de Cálculo Integral - Unidad 3</p>
     <button onclick="mostrarMenu()">Comenzar</button>
 </div>
 
-<!-- Menú -->
+<!-- MENÚ -->
 <div id="menu" class="pantalla oculto">
     <h2>Selecciona un modo</h2>
 
     <div class="botones">
         <button onclick="abrirSeccion('estudiar')">📘 Estudiar</button>
         <button onclick="abrirSeccion('examen')">📝 Examen</button>
-        <button onclick="abrirSeccion('practicar')">🎯 Practicar</button>
-        <button onclick="abrirSeccion('repasar')">🧠 Repasar</button>
+        <button onclick="abrirSeccion('practica')">🎯 Práctica</button>
+        <button onclick="abrirSeccion('repaso')">🧠 Repaso</button>
         <button onclick="abrirSeccion('formulas')">📚 Fórmulas</button>
-        <button onclick="abrirSeccion('reto')">🏆 Reto</button>
     </div>
 </div>
 
-<!-- Secciones -->
-<div id="estudiar" class="pantalla oculto">📘 Sección Estudiar</div>
-<div id="examen" class="pantalla oculto">📝 Sección Examen</div>
-<div id="practicar" class="pantalla oculto">🎯 Sección Practicar</div>
-<div id="repasar" class="pantalla oculto">🧠 Sección Repasar</div>
-<div id="formulas" class="pantalla oculto">📚 Sección Fórmulas</div>
-<div id="reto" class="pantalla oculto">🏆 Sección Reto</div>
-
-<!-- Progreso -->
-<div class="progreso">
-<h3>Progreso</h3>
-<progress value="0" max="100"></progress>
-<p>0%</p>
-</div>
+<!-- MODOS -->
+<div id="estudiar" class="pantalla oculto"></div>
+<div id="examen" class="pantalla oculto"></div>
+<div id="practica" class="pantalla oculto"></div>
+<div id="repaso" class="pantalla oculto"></div>
+<div id="formulas" class="pantalla oculto"></div>
 
 </div>
 
