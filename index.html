@@ -1,82 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Simulador de Cálculo Integral</title>
-
 <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
 
 <header>
-
 <h1>SIMULADOR DE CÁLCULO DE UNA VARIABLE</h1>
-
 <h2>Unidad 3 - Ingeniería Industrial</h2>
-
 </header>
 
 <div class="contenedor">
 
-<div class="bienvenida">
+<!-- Pantalla bienvenida -->
+<div id="bienvenida" class="pantalla">
+    <h2>Bienvenido</h2>
+    <p>Este simulador fue diseñado para ayudarte a preparar tu examen de la Unidad 3.</p>
 
-<h2>Bienvenido</h2>
-
-<p>
-
-Este simulador fue diseñado para ayudarte a preparar tu examen de la Unidad 3.
-
-</p>
-
-<button onclick="mostrarMenu()">
-
-Comenzar
-
-</button>
-
+    <button onclick="mostrarMenu()">Comenzar</button>
 </div>
 
-<div id="menu" class="oculto">
+<!-- Menú -->
+<div id="menu" class="pantalla oculto">
+    <h2>Selecciona un modo</h2>
 
-<h2>Selecciona un modo</h2>
-
-<div class="botones">
-
-<button>📘 Estudiar</button>
-
-<button>📝 Examen</button>
-
-<button>🎯 Practicar</button>
-
-<button>🧠 Repasar</button>
-
-<button>📚 Fórmulas</button>
-
-<button>🏆 Reto</button>
-
+    <div class="botones">
+        <button onclick="abrirSeccion('estudiar')">📘 Estudiar</button>
+        <button onclick="abrirSeccion('examen')">📝 Examen</button>
+        <button onclick="abrirSeccion('practicar')">🎯 Practicar</button>
+        <button onclick="abrirSeccion('repasar')">🧠 Repasar</button>
+        <button onclick="abrirSeccion('formulas')">📚 Fórmulas</button>
+        <button onclick="abrirSeccion('reto')">🏆 Reto</button>
+    </div>
 </div>
 
-</div>
+<!-- Secciones -->
+<div id="estudiar" class="pantalla oculto">📘 Sección Estudiar</div>
+<div id="examen" class="pantalla oculto">📝 Sección Examen</div>
+<div id="practicar" class="pantalla oculto">🎯 Sección Practicar</div>
+<div id="repasar" class="pantalla oculto">🧠 Sección Repasar</div>
+<div id="formulas" class="pantalla oculto">📚 Sección Fórmulas</div>
+<div id="reto" class="pantalla oculto">🏆 Sección Reto</div>
 
+<!-- Progreso -->
 <div class="progreso">
-
 <h3>Progreso</h3>
-
 <progress value="0" max="100"></progress>
-
 <p>0%</p>
-
 </div>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
