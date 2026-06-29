@@ -38,22 +38,18 @@ header h2{
     margin:auto;
 }
 
-/* ====== TARJETAS ====== */
+/* ====== TARJETAS / PANTALLAS ====== */
 
 .bienvenida,
 .progreso,
-#menu{
+#menu,
+.pantalla{
 
     background:white;
-
     color:#222;
-
     margin-top:25px;
-
     border-radius:15px;
-
     padding:30px;
-
     box-shadow:0 10px 25px rgba(0,0,0,.2);
 
 }
@@ -61,73 +57,47 @@ header h2{
 /* ====== BOTONES ====== */
 
 button{
-
     background:#1565C0;
-
     color:white;
-
     border:none;
-
     padding:15px 30px;
-
     border-radius:10px;
-
     cursor:pointer;
-
     font-size:17px;
-
     transition:.3s;
-
 }
 
 button:hover{
-
     background:#0D47A1;
-
     transform:scale(1.05);
-
 }
 
 /* ====== MENÚ ====== */
 
 .botones{
-
     display:grid;
-
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-
     gap:20px;
-
     margin-top:20px;
-
 }
 
 .botones button{
-
     height:80px;
-
     font-size:20px;
-
 }
 
 /* ====== PROGRESO ====== */
 
 progress{
-
     width:100%;
-
     height:25px;
-
     margin-top:15px;
-
 }
 
 /* ====== OCULTAR ====== */
 
 .oculto{
-
     display:none;
-
 }
 
 /* ====== RESPONSIVE ====== */
@@ -135,21 +105,15 @@ progress{
 @media(max-width:700px){
 
 header h1{
-
-font-size:30px;
-
+    font-size:30px;
 }
 
 .botones{
-
-grid-template-columns:1fr;
-
+    grid-template-columns:1fr;
 }
 
 button{
-
-width:100%;
-
+    width:100%;
 }
 
 }
